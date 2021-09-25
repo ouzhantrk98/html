@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Başlık kısmı burada oluyor semantic etiketlerde-->
+    <header>
+        <h1>En Popüler Programlama Dilleri</h1>
+        <p>Bilginç IT Academy olarak sizin için dünyada en çok kullanılan programlama dillerini derledik. Gelin bu popüler 5 programlama diline birlikte bir göz atalım:</p>
+        <!-- Linkleri nav kısmına ekliyoruz html de
+        list-style-type ile listeyi tanımlayan maddeleme işaretlerini kaldırdık-->
+        <nav>
+            <ol type="A" style="list-style-type: none;">
+                
+                <li><a href="#">Java Nedir</a></li>
+   
+                <li><a href="#">C# Nedir</a></li>
+               
+                <li><a href="#">Python Nedir</a></li>
+                
+            </ol>
+        </nav>
+        
+    </header>
+
+
+    <!--Content i içerecek kısmı section ile tanımlıyoruz-->
+    <section id="content">
+
+        <!--Burada bölüm sağa ve sola ayrılcak solda link kategorilerini içeren aside sağda ise main olacak-->
+        <aside>
+            <nav>
+                <ol type="A">
+                    <li> <a href="#">Nesne Yönelimli Programlama</a> </li>
+                    <li> <a href="#">Fonksiyonel Programlama</a> </li>
+                    <li> <a href="#">SOLID Kavramları</a> </li>  
+                    <li> <a href="#">Agile Metodolojileri</a> </li>    
+                    
+                </ol>
+            </nav>
+        </aside>
+
+        <main>
+            <!--Main deki tüm içerik için kapsayıcı bir section etiketi altında alıyoruz. -->
+            <section id="ProgramlamaDilleri">
+                
+                <!--Herhangi bir makale yazılacağı zaman article etiketi ile belirtiyoruz. -->
+                <article>
+
+                    <a href="https://tr.wikipedia.org/wiki/Java_(programlama_dili)" target="_blank">Java</a>
+                    <br>
+                    <p>Günümüzde mobil sektörünün devlerinden birisi olan <strong>Java</strong>, çok yaygın bir kullanım yelpazesine sahip olup yıllarca popülaritesini yüksek seviyelerde tutmuş bir programlama dilidir. Windows, Linux ve Mac platformlarında rahatça kodlayabileceğiniz <b>Java</b>’nın günümüzde bilinen en iyi projelerinden birisi Minecraft isimli oyundur.</p>
+                
+                </article>
+                   
+                        
+                <article>
+                    <a href="https://tr.wikipedia.org/wiki/Python_(programlama_dili)" target="_blank">Python</a>
+                        <br>
+                        <p>Son yıllarda oldukça popüler bir yere sahip olan Python, kolay öğrenilen bir dil olup uygulama yelpazesinin geniş olmasıyla beraber tercih edilen programlama dillerinde üst sıralara yükselmiştir. Neredeyse bütün Linux geliştiricileri tarafından kullanılmakta olup yeni başlayan katılımcılar için ideal ve hayal gücünü test edebileceği bir yere sahiptir.</p>
+                </article>
+                   
+                        
+                   
+
+
+            </section>
+        </main>
+    </section>
+
+    
+
+    <!--Sayfanın en altında gösterilen kısmı da ekleyelim-->
+    <footer>
+        Tüm hakları saklıdır.
+    </footer>
+
+</body>
+</html>
