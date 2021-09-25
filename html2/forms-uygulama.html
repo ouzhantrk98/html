@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--Bu kısımda formlar ve tabloları kullanarak güzel görünümlü bir html örnek sayfası yapmaya çalışacağız.-->
+
+    <h1>Lütfen Formu Eksiksiz Doldurunuz</h1>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th rowspan="2" style="font-size: 25px; padding-bottom: 10px;">Hesap Bilgileriniz</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Kullanıcı Adı: </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Eposta: </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Parola: </td>
+                <td><input type="text"></td>
+            </tr>
+        </tbody>
+
+    </table>
+    <br><br>
+    <table>
+
+        <thead>
+            <tr>
+                <th rowspan="2"  style="font-size: 25px; padding-bottom: 10px;">Kişisel Bilgileriniz</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Adınız: </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Soyadınız: </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Şehir: </td>
+                <td><select id="sehir">
+                    <option value="ankara">Ankara</option>
+                    <option value="istanbul">İstanbul</option>
+                    <option value="izmir">İzmir</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="cinsiyet">Cinsiyet: </label></td>
+                <td>
+                    <input type="radio" name=cinsiyet>
+                    <label for="erkek">Erkek</label>
+                    <input type="radio" name=cinsiyet>
+                    <label for="kadin">Kadın</label>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>Hobileriniz: </td>
+                <td>
+                    <input type="checkbox">
+                    <label for="yürüyüs">Yürüyüş Yapmak</label>
+                    <input type="checkbox">
+                    <label for="muzik">Müzik Dinlemek</label>
+                    <input type="checkbox">
+                    <label for="keman">Keman Çalmak</label>
+                    <input type="checkbox">
+                    <label for="kitap">Kitap Okumak</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <button>Kaydet</button> </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    
+
+</body>
+</html>
