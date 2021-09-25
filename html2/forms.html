@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Bu bölümde formların nasıl kullanılacağını belirten bir döküman hazılrayalım.-->
+
+    <!-- action attribute'ü ile form içinde girdiğimiz bilgilerin sunucudaki hangi dosyada işleneceğini
+    belirityoruz yani kısaca front end ile back end' in bağlanma noktası olarakta adlandırabiiriz-->
+    <form action="server.js">
+
+        <!-- label etiketi ile input formunun önüne gelecek olan text i hazırladık-->
+        <!-- input etiketinin tipini bvelirtmek için type attrıbute' ünü kullanıyoruz. text metin içeriki bir input geleceğği anlamına gelir.-->
+        <div>
+            <label for="name">Adınız: </label>
+            <input type="text" id="name">
+        </div>
+
+        <div>
+            <label for="surname">Soyadınız: </label>
+            <input type="text" id="surname">
+        </div>
+
+        <!--Kullanıcının metin alanına input girebilmesi için textarea etiketini kullanıyoruz-->
+        <div>
+            <label for="intro">Kendini Anlat</label>
+            <textarea id="intro" cols="30"></textarea>
+        </div>
+
+        <!--Şimdi de radio ve checkbox kullanım örneklerine bakalım-->
+        <div>
+            
+            <!--Hepsinin yalnızca bir sefer seçilmesini sağlamak için name attribute' ü ile aynı isim
+            altında gruplayalım-->
+
+            <p>En sevdiğiniz programlama dilleri</p>
+            <input type="radio" name = "Programlama">
+            <label for="Java">JAVA</label>
+            <input type="radio" name = "Programlama">
+            <label for="Python">Python</label>
+            <input type="radio" name = "Programlama">
+            <label for="Kotlin">Kotlin</label>
+
+        </div>
+
+        <!--Şimdi de checkbox kullanımına bakalım-->
+        <div>
+            <p>En sevdiğiniz veriyapıları</p>
+            <input type="checkbox" name= "VeriYapısı">
+            <label for="Tree">Ağaçlar</label>
+            <input type="checkbox" name= "VeriYapısı">
+            <label for="LinkedList">Bağlı Listeler</label>
+            <input type="checkbox" name= "VeriYapısı">
+            <label for="Graphs">Çizgeler</label>
+        </div>
+
+        <!--Formlar içindeki listelere bakallım-->
+        <div>
+            <label for="sehir">Şehriniz: </label>
+            <select id="sehirler">
+                <option value="ankara">Ankara</option>
+                <option value="izmir">İzmir</option>
+                <option value="istanbul">İstanbul</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="email">Email: </label>
+            <input type="text">
+        </div>
+
+        <!-- Burada kaydete basıldığı anda kullanıcı ile ilgili olan bilgiler direkt sunucudaki dosyaya aktarılacak.-->
+        <button type="submit">Kaydet</button>
+
+    </form>
+
+</body>
+</html>
