@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo Örneği</title>
+</head>
+<body>
+    
+    <!-- Bu dersimizde tabloların nasıl yapıldığını öğreneceğiz-->
+    <!-- Tablo oluşturmak için table etiketini kullanacağız-->
+    <!-- Eğerki tabloya sınırlar çizmek istiyorsak bunun border attribute'ü ile yapıyoruz. Border güncel tarayıcılar iöçin uygun değildir güncel tarayıcılar buınun için css kullanmakta-->
+    <!-- Tablodaki hücreler içinde padding yapmak istiyorsak bunu da cellpadding özelliği ile uyguluyoruz-->
+    <table border="1" width="%70" cellpadding="10" cellspacing="5">
+
+        <!-- tablonun başlık ve gövde kısımları thead ve tbody etiketleri ile birbirlerinden ayrılmakta-->
+        <thead>
+            
+            <!-- tr etiketi içinde th ile her bir kolonun ne anlama geldiğini yazarak belirtelim-->
+
+            <tr>
+                <th>ID</th>
+                <th>Ürün adı</th>
+                <th>Ürün Fiyatı</th>
+                <th>Ürün resmi</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <!-- tr etiketi satır bilgilerini td etiketi ise kolon bilgilerini bizlere vermektedir-->
+            <tr>
+                <td>1</td>
+                <td>Iphone 11</td>
+                <td>8000 tl</td>
+                <td>1.jpeg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Iphone 12</td>
+                <td>9000 tl</td>
+                <td>2.jpeg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Iphone 13</td>
+                <td>8000 tl</td>
+                <td>3.jpeg</td>
+            </tr>
+            
+
+        </tbody>
+    </table>
+
+</body>
+</html>
